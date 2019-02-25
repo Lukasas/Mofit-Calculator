@@ -1,0 +1,13 @@
+
+#include <Motif.tmpl>
+#include <Motif.rules>
+
+CC=g++
+CCOPTIONS=-O -Wall -lXmu -fno-builtin mywindow.cpp logic.cpp
+CDEBUGFLAGS=-g
+LOCAL_LIBRARIES = XmClientLibs
+
+MSimpleProgramTarget(calculator)
+clean::
+	$(RM) Makefile
+
